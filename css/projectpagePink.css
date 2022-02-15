@@ -1,0 +1,20 @@
+:root {
+  --1: #f8f8f8; /*almost white*/
+  --2: #18332a; /*dark green*/
+  --3: #99403f; /*dark pink*/
+  --4: #dea8af; /*light pink*/
+ 
+  /* Switched 5 and 6 */
+  --6: #99403f; /* Dark Pink */
+  --5: #dea8af; /*medium pink*/
+  --7: #F4DFDF; /*light pink*/
+  
+  --8: #404040; /* Dark grey */
+}
+
+.mainInfo {
+    color: var(--6);
+}
+footer {
+  background: var(--6);
+}
