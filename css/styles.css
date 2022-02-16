@@ -71,11 +71,14 @@ h1 {
 h2 {
   font-family: 'DM Serif Display', serif;
   font-size: 50px;
-  line-height: 95.3%;
-  /* letter-spacing: 43.5px; */
+  
 
   color: var(--3);
-  
+  line-height: 95.3%;
+  letter-spacing: 43.5px;
+  text-align: center;
+  text-indent:1em;
+
   margin: 0;
   padding: 0;
   
@@ -93,6 +96,17 @@ h3 {
   line-height: 25%;
 }
 
+p {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+
+  line-height: 133.4%;
+  
+  color: var(--3);
+}
+
 hr {
   border: 1.5px solid var(--3);
   width: 310px;
@@ -103,7 +117,7 @@ hr {
   font-family: 'Karla';
   font-style: normal;
   font-weight: 200;
-  font-size: 19px;
+  font-size: 17px;
 
   color: var(--3);
   text-decoration: none;
@@ -114,13 +128,20 @@ hr {
   text-decoration: 1px  line-through var(--3);
 }
 
-#active a{
+/* add div back to make work */
+.active, a:link{
   text-decoration: 1px  line-through var(--3);
 }
 
-#links a:hover #active a{
-  color: black;
+#links:hover  #active a{
+  text-decoration: none;
 }
+
+/* use thing for drop down link menu */
+/* #active a:hover{
+  text-decoration: none;
+} */
+
 
 
 /*
@@ -132,11 +153,6 @@ h6 {
   padding: 0;
 }
 
-p {
-  font-weight: 400;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
 
 b {
   font-weight: 700;
@@ -166,7 +182,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-padding: 20px 60px 0px 40px;
+padding: 25px 90px 0px 40px;
 
 }
 
@@ -190,16 +206,27 @@ height: 100%;
 }
 
 nav svg {
-width: 100px;
+width: 70px;
 }
 
 #rosebg {
   background-image: url("../img/imgbg/longrose.png");
-  background-size: 30%;
+  background-size: 360px;
   background-repeat: no-repeat;
   background-position: center; 
 
 height: 520px;
+}
+
+#rosebgShort {
+  background-image: url("../img/imgbg/longrose.png");
+  background-size: 360px;
+  background-repeat: no-repeat;
+  background-position: center top; 
+
+  
+height: 280px;
+
 }
 
 #intro {
@@ -390,6 +417,20 @@ a:hover .img__description_layer {
   visibility: visible;
   opacity: 1;
 } 
+
+/* About Page */
+
+#about {
+  display: flex;
+  gap: 70px;
+
+  padding: 100px;
+}
+
+#about img {
+height: 200%;
+width: 200%;
+}
 
 /* #about {
   background: var(--3);
