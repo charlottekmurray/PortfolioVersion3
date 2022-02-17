@@ -42,10 +42,10 @@
 :root {
   --1: #7E2F38; /*dark red*/
   --2: #FFBAC2; /*light pink*/
-  --3: #FCFBF6; /*whiteish*/
+  --3: #FCFBF7; /*whiteish*/
   --4: #B15433; /*orange*/
-  
-  --5: #18332a; /*dark green*/
+  --5: #BA4250; /*Megenta*/
+
   --6: #588175; /*medium green*/
   --7: #AECAC0; /*light green*/
   
@@ -62,6 +62,7 @@ h1 {
   line-height: 95.3%;
   letter-spacing: 43.5px;
   text-align: center;
+  text-indent:.5em;
 
   margin: 0;
  padding: 0;
@@ -75,9 +76,9 @@ h2 {
 
   color: var(--3);
   line-height: 95.3%;
-  letter-spacing: 43.5px;
+
   text-align: center;
-  text-indent:1em;
+ 
 
   margin: 0;
   padding: 0;
@@ -95,6 +96,8 @@ h3 {
   text-align: center;
   line-height: 25%;
 }
+
+
 
 p {
   font-family: 'Karla';
@@ -129,18 +132,15 @@ hr {
 }
 
 /* add div back to make work */
-.active, a:link{
+#active a{
   text-decoration: 1px  line-through var(--3);
 }
 
-#links:hover  #active a{
-  text-decoration: none;
-}
 
 /* use thing for drop down link menu */
-/* #active a:hover{
+#active a:hover{
   text-decoration: none;
-} */
+}
 
 
 
@@ -167,6 +167,10 @@ a:hover {
 /* The Body - default text is dark green */
 body {
   background: var(--4);
+  background-image: url("../img/imgbg/PORTFOLIOsitebackground.jpg");
+background-size: 100%;
+
+background-repeat: no-repeat;
   /* font-family: "Thasadith", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -197,12 +201,7 @@ padding: 25px 90px 0px 40px;
 /* Header on all pages */
 
 header {
-background-image: url("../img/imgbg/PORTFOLIOsitebackground.jpg");
-background-size: 100%;
 
-background-repeat: no-repeat;
-
-height: 100%;
 }
 
 nav svg {
@@ -213,7 +212,7 @@ width: 70px;
   background-image: url("../img/imgbg/longrose.png");
   background-size: 360px;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: 53.5% top; 
 
 height: 520px;
 }
@@ -222,7 +221,7 @@ height: 520px;
   background-image: url("../img/imgbg/longrose.png");
   background-size: 360px;
   background-repeat: no-repeat;
-  background-position: center top; 
+  background-position: 53.5% top; 
 
   
 height: 280px;
@@ -294,13 +293,16 @@ header h3 {
   border-radius: 0 0 20px 20px;
 } */ 
 
+/* For all */
 
 #portfolio {
   padding: 70px;
   margin-bottom: 70px;
 }
 
-#portfolioGrid {
+/* Portfolio Categories Grid */
+
+.portfolioGrid {
   display: grid;
 grid-template: repeat(4, 200px) / repeat(4, 200px);
 width: 800px;
@@ -308,7 +310,6 @@ width: 800px;
   flex-wrap: wrap; */
   margin: auto;
 }
-
 
 #bottomRight {
   grid-area: 3 / 3 / span 2 / span 2;
@@ -373,20 +374,65 @@ width: 800px;
   -webkit-transition: z-index 0s;
 }
 
+/* Project grid */
+
+.projectGrid {
+  display: grid;
+  grid-template: repeat(5, 155px) / 360px 360px;
+  gap: 50px;
+
+  justify-content: center;
 
 
 
-#portfolioGrid a {
-  background: var(--1);
-  position: relative;
-    height: 400px;
 }
 
-#portfolioGrid img {
+.projectGrid h2 {
+letter-spacing: normal;
+text-indent:0;
+}
+
+#a {
+  grid-area: 1 / 1 / span 2 / 1;
+}
+
+#b {
+  grid-area: 2 / 2 / span 2 / 2;
+}
+
+#c {
+  grid-area: 3 / 1 / span 2 / 1;
+}
+
+/* Portfolio Categories Hover and Styles */
+
+.portfolioImg a {
+  background: var(--5);
+  position: relative;
+    height: 400px;
+    width: 400px;
+}
+
+/* For the smaller images on category pages */
+.projectGrid a {
+  height: 360px;
+  width: 360px;
+}
+
+.portfolioImg img {
   height: 400px;
   width: 400px;
   object-fit: cover;
+  
+  box-shadow: 0px 0px 15px 0px var(--1);
 }
+
+/* For the smaller images on category pages */
+.projectGrid img {
+  height: 360px;
+  width: 360px;
+}
+
 
 
 .img__description_layer {
@@ -395,9 +441,6 @@ width: 800px;
   width: 400px;
   top: 0;
   bottom: 0;
-  color: #fff;
-  font-family: 'Boska', serif;
-  font-size: 40px;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -408,9 +451,15 @@ width: 800px;
   transition: opacity 0.3s, visibility 0.2s;
 }
 
-#portfolioGrid a:hover img {
+/* For the smaller images on category pages */
+.imgD2 {
+    height: 360px;
+    width: 360px;
+}
+
+.portfolioImg a:hover img {
   box-shadow: 0px 0px 15px 0px var(--1);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 a:hover .img__description_layer {
