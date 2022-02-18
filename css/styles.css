@@ -107,7 +107,7 @@ p {
   line-height: 133.4%;
 
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   
   color: var(--3);
 }
@@ -153,7 +153,7 @@ body {
   background-image: url("../img/imgbg/PORTFOLIOsitebackground.jpg");
 background-size: 100%;
 
-background-repeat: no-repeat;
+background-repeat: repeat;
 }
 
 /* Nav */
@@ -297,9 +297,6 @@ width: 800px;
   gap: 50px;
 
   justify-content: center;
-
-
-
 }
 
 .projectGrid h2 {
@@ -347,8 +344,6 @@ text-indent:0;
   height: 360px;
   width: 360px;
 }
-
-
 
 .img__description_layer {
   position: absolute;
@@ -485,12 +480,13 @@ ul {
 
 /* Top Images and Videos */
 
-video {
+.wowVideo {
   width: auto;
   height: 366px;
-  /* min-width: 1100px; */
-  /* max-width: 1200px; */
-    display: block;
+  border-radius: 15px;
+  
+  display: block;
+
   margin-left: auto;
   margin-right: auto;
 } 
@@ -498,6 +494,7 @@ video {
 header img {
   height: 400px;
   width: 75%; 
+  border-radius: 15px;
 
   display: block;
   object-fit: cover;
@@ -542,29 +539,30 @@ margin: 0;
 /* Project Info */
 
 #headerinfo {
-  /* background: var(--1); */
-
-
-  margin: auto;
-  padding: 42px;
+  margin: 35px;
 }
 
 #metadata {
+  background: rgba(225, 225, 225, 0.1);
+  /* border: .1px solid var(--3); */
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
   display: flex;
   justify-content: space-around;
-  margin: 0 60px 0 60px;
+
+  margin: 0 60px 40px 60px;
+  padding: 15px;
 }
 
-#metadata p {
-  margin: 0 0 50px 0;
-}
 
+/* Button */
 #finalProject {
-  background: var(--7);
-  color: var(--8);
+  background: var(--2);
+  color: var(--1);
   text-decoration: none;
-  padding: 17px 35px 17px 35px;
-  border-radius: 5px;
+  padding: 7px 25px 7px 25px;
+  border-radius: 12px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   transition: all 0.15s linear;
 }
@@ -572,7 +570,7 @@ margin: 0;
 #finalProject:hover {
   background: var(--5);
   box-shadow: inset 0 3px 10px rgb(0 0 0 / 0.2);
-  color: var(--1);
+  color: var(--3);
 }
 
 #projinfo {
@@ -583,23 +581,28 @@ margin: 0;
   margin: 0px 120px 0 120px;
 }
 
-#projdesc {
-  width: 50%;
-}
-
-#otherinfo {
-  width: 50%;
-}
-
 /* Rest of page info */
 
+/* width 50% for anything */
+.fifty {
+  width: 50%;
+}
+
+
+/* Two next to each other */
 .twoNext {
   display: flex;
   justify-content: center;
-  margin: 100px;
+  
   gap: 50px;
 }
 
+/* margin for all sections */
+.marg {
+  margin: 100px;
+}
+
+/* This is for GD art direction. One on top of another */
 .artDirection {
   display: flex;
   flex-direction: column;
@@ -607,37 +610,63 @@ width: 500px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+/* Just Titles - structure */
+.centerTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+} 
+
+/* Styling for text rect */
 .square {
-  background: white;
+  background: rgba(225, 225, 225, 0.1);
+  /* border: .1px solid var(--3); */
+  border-radius: 25px;
+
   padding: 30px;
   width: 574px;
   height: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.projectGoals {
-  align-self: center;
+/* Styling for just titles */
+.block {
+  background: rgba(225, 225, 225, 0.1);
+  border: .1px solid var(--3);
+  border-radius: 25px;
   
+  margin-bottom: 80px;
+  
+   padding: 15px 45px 15px 45px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.illustrator {
+/* Align self for flex */
+.alignCenter {
+  align-self: center;
+}
+
+/* Grid for three items, two on left, one of right. */
+.threeGrid {
   display: grid;
   grid-template: 20% 260px / auto auto;
   justify-content: center;
-  background: var(--7);
-  padding: 100px;
+ 
+
   gap: 50px;
   height: auto;
 }
 
-
-.illustratorWork {
+/* Grid for three items - item 1 top left */
+.threeGrid1 {
   grid-area: 1 / 1 / span 1 / span 1;
   width: 90%;
   max-width: 574px;
 }
 
-#pieces {
+/* Grid for three items - item 2 bottom left */
+#threeGrid2 {
   grid-area: 1 / 2 / span 2 / span 1;
   width: 80%;
   background: white;
@@ -646,7 +675,8 @@ width: 500px;
   max-width: 434px;
 }
 
-#googleStill {
+/* Grid for three items - item three right */
+#threeGrid3 {
   grid-area: 2 / 1 / span 1 / span 1;
   background: white;
   padding: 30px;
@@ -654,22 +684,7 @@ width: 500px;
   max-width: 574px;
 }
 
-.challengesFinal {
-    display: flex;
-  justify-content: center;
-  margin: 100px;
-  gap: 50px;
-}
-
-.final {
-  width: 500px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.challenges {
-  align-self: center;
-}
-
+/* Video Mockup */
 .finalMockup {
   width: 80%;
   display: block;
@@ -679,18 +694,8 @@ width: 500px;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.orange {
-  background: var(--5);
-  margin: 0;
-  padding: 100px;
-}
-
-.researchText {
-  align-self: center;
-}
-
+/* Grid for residency examples */
 .picGrid {
- 
   width: 50%;
 }
 
@@ -707,67 +712,40 @@ width: 500px;
   transition: all 0.15s linear;
 }
 
-#graph {
+/* till here */
+
+/* anything width 90% */
+.ninety {
   width: 90%;
 }
 
-.center{
-  padding: 100px;
+/* Three items in flex*/
+.flexThree {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 50px;
 }
 
-.block {
-  margin-bottom: 80px;
-  background: white;
-   padding: 15px 45px 15px 45px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.lightOrange {
-  background: var(--7);
-}
-
-.darkPink {
-  background: var(--6);
-}
-
-.pink {
-  background: var(--5);
-}
-
-.lightPink {
-  background: var(--7);
-}
-
-.wireflow {
-  width: 70%;
+/* Size of the three items in flex*/
+.flexThree img {
+  width: 60%;
 }
 
 .sketches {
   width: 550px;
 }
 
-.alignCenter {
-  align-self: center;
-}
-
-.originalSite {
-  width: 50%;
-}
-
-
+/* Three Grid for different sizes */
 .threePiece {
   display: grid;
   grid-template: 430px 430px / 45% 45%;
   justify-content: center;
   gap: 50px;
   height: auto;
-  padding: 100px;
+
 }
 
-.text1 {
+/* Three Grid for different sizes - top left */
+.piece1 {
   grid-area: 1 / 1 / span 1 / span 1;
   width: 90%;
   max-width: 574;
@@ -775,13 +753,15 @@ width: 500px;
   align-self: end;
 }
 
-.prototype {
+/* Three Grid for different sizes - right */
+.piece3 {
   grid-area: 1 / 2 / span 2 / span 1;
   width: 100%;
 height: 100%;
 }
 
-.text2 {
+/* Three Grid for different sizes - bottom left */
+.piece2 {
   grid-area: 2 / 1 / span 1 / span 1;
   width: 90%;
   max-width: 574;
@@ -789,26 +769,21 @@ height: 100%;
   align-self: start;
 }
 
-.audit {
-  width: 90%;
-}
 
-.flexSketches {
-  display: flex;
-  gap: 50px;
-}
 
-.flexSketches img {
+/* Google Doodle Sketches */
+.sixty {
   width: 60%;
 }
 
+/* For Codepen Portal */
 .codepen {
   padding-top: 0;
-  padding: 100px;
   width: 60%;
   
 } 
-
+ 
+/* For Codepen Portal */
  .cp_embed_wrapper { */
   /* required for resize to work */
   overflow: hidden; 
@@ -822,29 +797,15 @@ padding-top: 0;
   /* default height */
    height: 600px;
 }
+
 .cp_embed_wrapper iframe {
   height: 100%;
 }
 
-.ohperc {
+/* Anything for 100% */
+.hundred {
   width: 100%;
 }
-
-.nop {
-  padding: 0;
-}
-
-.figma {
-  width: 100%;
-}
-
-.noTopP{
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0;
-} 
 
 /* Footer */
 
