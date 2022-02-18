@@ -633,7 +633,7 @@ width: 500px;
 /* Styling for just titles */
 .block {
   background: rgba(225, 225, 225, 0.1);
-  border: .1px solid var(--3);
+  /* border: .1px solid var(--3); */
   border-radius: 25px;
   
   margin-bottom: 80px;
