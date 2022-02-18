@@ -52,6 +52,7 @@
   --8: #404040; /* Dark grey */
 }
 
+/* Text styles */
 
 h1 {
   font-family: 'DM Serif Display', serif;
@@ -97,8 +98,6 @@ h3 {
   line-height: 25%;
 }
 
-
-
 p {
   font-family: 'Karla';
   font-style: normal;
@@ -106,9 +105,14 @@ p {
   font-size: 18px;
 
   line-height: 133.4%;
+
+  margin-top: 10px;
+  margin-bottom: 0;
   
   color: var(--3);
 }
+
+/* Line on main page */
 
 hr {
   border: 1.5px solid var(--3);
@@ -142,41 +146,14 @@ hr {
   text-decoration: none;
 }
 
-
-
-/*
-h6 {
-  font-family: "Thasadith", sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-
-b {
-  font-weight: 700;
-}
-
-a:hover {
-  color: var(--4);
-}
-
 /* Structure */
 
-/* The Body - default text is dark green */
 body {
   background: var(--4);
   background-image: url("../img/imgbg/PORTFOLIOsitebackground.jpg");
 background-size: 100%;
 
 background-repeat: no-repeat;
-  /* font-family: "Thasadith", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--2);
-  margin: 0;
-  letter-spacing: 0.06em; */
 }
 
 /* Nav */
@@ -186,7 +163,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-padding: 25px 90px 0px 40px;
+padding: 25px 90px 40px 40px;
 
 }
 
@@ -197,12 +174,11 @@ padding: 25px 90px 0px 40px;
   width: 30%;
 }
 
-
 /* Header on all pages */
 
-header {
+/* header {
 
-}
+} */
 
 nav svg {
 width: 70px;
@@ -231,67 +207,6 @@ height: 280px;
 #intro {
   padding-top: 100px;
 }
-
-/* header .videoHolder {
-  grid-area: 2 / 1 / 4 / 2;
-  width: 100%;
-  height: 591px;
-  background: white;
-  justify-self: center;
-}
-
-.videoHolder video {
-  min-width: 1100px;
-  max-width: 1200px;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-/* header .imgHolder img {
-  object-fit: cover;
-} */
-
-/* header .imgHolder {
-  height: 591px;
-}
-
-header img {
-    grid-area: 2 / 1 / 4 / 2;
-  width: 100%; */
-/*   height: 591px; */
-  /* background: white;
-  justify-self: center;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover;
-} */
-
-
-/* header section {
-  text-align: center;
-  margin: 25px;
-  
-}
-
-header h1 {
-  color: var(--1);
-  background: var(--6);
-  width: 47%;
-  padding: 10px 0 0 0;
- margin: 0 auto 0 auto;
-  border-radius: 20px 20px 0 0 ;
-}
-
-header h3 {
-  color: var(--1);
-  background: var(--6);
-  width: 47%;
-  padding: 0 0 10px 0;
-  margin: 0 auto 0 auto;
-  border-radius: 0 0 20px 20px;
-} */ 
 
 /* For all */
 
@@ -481,6 +396,8 @@ height: 200%;
 width: 200%;
 }
 
+/* About section */
+
 /* #about {
   background: var(--3);
   padding: 30px;
@@ -566,13 +483,70 @@ ul {
 
 /* Just Project pages */
 
-/* main {
-  color: var(--1);
+/* Top Images and Videos */
+
+video {
+  width: auto;
+  height: 366px;
+  /* min-width: 1100px; */
+  /* max-width: 1200px; */
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+header img {
+  height: 400px;
+  width: 75%; 
+
+  display: block;
+  object-fit: cover;
+
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+/* Project Titles */
+header section {
+  margin: 25px;
 }
 
+header section h1 {
+font-size: 60px;
+letter-spacing: normal;
+
+color: var(--3);
+}
+
+section h3 {
+font-size: 40px;
+line-height: normal;
+
+color: var(--3);
+
+margin: 10px;
+} 
+
+h4 {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: normal;
+  
+  color: var(--3);
+  
+margin: 0;
+  } 
+
+/* Project Info */
+
 #headerinfo {
-  background: var(--6);
-  padding-bottom: 60px;
+  /* background: var(--1); */
+
+
+  margin: auto;
+  padding: 42px;
 }
 
 #metadata {
@@ -582,7 +556,7 @@ ul {
 }
 
 #metadata p {
-  margin: 60px 0 60px 0;
+  margin: 0 0 50px 0;
 }
 
 #finalProject {
@@ -604,21 +578,20 @@ ul {
 #projinfo {
   display: flex;
   justify-content: space-between;
-  margin: 5px 11% 0 11%;
+  gap: 70px;
+
+  margin: 0px 120px 0 120px;
 }
 
 #projdesc {
-  width: 60%;
-  margin: 0 80px 0 0;
+  width: 50%;
 }
 
 #otherinfo {
-  width: 70%;
+  width: 50%;
 }
 
-.mainInfo {
-  color: var(--5);
-}
+/* Rest of page info */
 
 .twoNext {
   display: flex;
@@ -724,8 +697,8 @@ width: 500px;
 .ex {
   margin: 25px;
   width: 40%;
-/*   width: 40%; */
-   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   width: 40%; */
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .ex:hover {
@@ -834,20 +807,20 @@ height: 100%;
   padding: 100px;
   width: 60%;
   
-} */
+} 
 
-/* .cp_embed_wrapper { */
+ .cp_embed_wrapper { */
   /* required for resize to work */
-  /* overflow: hidden; */
+  overflow: hidden; 
 
   /* make resizeble! */
-  /* resize: both; */
+   resize: both; 
 
   /* required to see the handle */
-  /* padding: 100px;
-padding-top: 0; */
+  padding: 100px;
+padding-top: 0; 
   /* default height */
-  /* height: 600px;
+   height: 600px;
 }
 .cp_embed_wrapper iframe {
   height: 100%;
@@ -871,7 +844,7 @@ padding-top: 0; */
   flex-direction: column;
   align-items: center;
   padding-top: 0;
-} */
+} 
 
 /* Footer */
 
