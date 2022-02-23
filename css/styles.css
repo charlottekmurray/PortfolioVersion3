@@ -98,6 +98,54 @@ h3 {
   line-height: 25%;
 }
 
+h4 {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: normal;
+  
+  color: var(--3);
+  
+margin: 0;
+  } 
+
+  h5 {
+    font-family: 'DM Serif Display', serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+    
+    color: var(--3);
+    
+  margin: 0;
+    } 
+
+    /* contact page text */
+   #contact h3 {
+      font-family: 'Karla';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: normal;
+      text-align: center;
+
+      color: var(--3);
+    }
+
+    #contact h4 {
+      font-family: 'Karla';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 35px;
+      line-height: normal;
+      text-align: center;
+
+      color: var(--3);
+    }
+
 p {
   font-family: 'Karla';
   font-style: normal;
@@ -120,7 +168,7 @@ hr {
   margin: 30px auto 30px auto;
 }
 
-#links a {
+.links a {
   font-family: 'Karla';
   font-style: normal;
   font-weight: 200;
@@ -131,9 +179,11 @@ hr {
   letter-spacing: 2px;
 }
 
-#links a:hover {
+.links a:hover {
   text-decoration: 1px  line-through var(--3);
 }
+
+
 
 /* add div back to make work */
 #active a{
@@ -167,7 +217,7 @@ padding: 25px 90px 40px 40px;
 
 }
 
-#links {
+.links {
   display: flex;
   justify-content: space-between;
 
@@ -212,7 +262,7 @@ height: 280px;
 
 #portfolio {
   padding: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 110px;
 }
 
 /* Portfolio Categories Grid */
@@ -381,17 +431,40 @@ a:hover .img__description_layer {
 
 #about {
   display: flex;
+  justify-content: center;
   gap: 70px;
 
   padding: 100px;
+  margin-bottom: 70px;
 }
 
 #about img {
-height: 200%;
-width: 200%;
+height: 500px;
+width: auto;
 }
 
-/* About section */
+#info {
+  width: 510px;
+
+  align-self: center;
+}
+
+/* Contact Page */
+
+#contact{
+  margin-top: 70px;
+}
+
+#contactLinks {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 60px 35% 100px 35%;
+}
+
+#contactLinks a:hover svg path{
+  fill: var(--2);
+}
 
 /* #about {
   background: var(--3);
@@ -524,17 +597,6 @@ color: var(--3);
 margin: 10px;
 } 
 
-h4 {
-  font-family: 'Karla';
-  font-style: normal;
-  font-weight: 200;
-  font-size: 30px;
-  line-height: normal;
-  
-  color: var(--3);
-  
-margin: 0;
-  } 
 
 /* Project Info */
 
@@ -810,9 +872,49 @@ padding-top: 0;
 /* Footer */
 
 footer {
-  height: 200px;
+  height: auto;
   
-  background: var(--1)
+  background: var(--1);
+
+  padding: 25px;
+}
+
+.footerLinks{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+  margin-bottom: 18px;
+}
+
+.footerLinks a {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+
+  color: var(--3);
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  margin-left: 20px;
+}
+
+.subLinks a{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+
+  color: var(--3);
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  margin-left: 8px;
+}
+
+.footerLinks a:hover {
+  text-decoration: 1px  line-through var(--3);
 }
 
 /* footer {
