@@ -186,21 +186,54 @@ hr {
 
 
 /* add div back to make work */
-#active a{
+/* #active a, #active2 a{
   text-decoration: 1px  line-through var(--3);
-}
+} */
 
 
 /* use thing for drop down link menu */
-#active a:hover{
+/* #active a:hover{
   text-decoration: none;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--3);
+font-size: 14px;
+
+  padding: 5px 3px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover #active a{
+  text-decoration: none;
+} */
+
 
 /* Structure */
 
 body {
   background: var(--4);
-  background-image: url("../img/imgbg/PORTFOLIOsitebackground.jpg");
+  background-image: url("../img/imgbg/longBG.png");
 background-size: 100%;
 
 background-repeat: repeat;
@@ -225,10 +258,6 @@ padding: 25px 90px 40px 40px;
 }
 
 /* Header on all pages */
-
-/* header {
-
-} */
 
 nav svg {
 width: 70px;
@@ -560,6 +589,7 @@ ul {
   
   display: block;
 
+  margin-top: 27px;
   margin-left: auto;
   margin-right: auto;
 } 
@@ -572,6 +602,7 @@ header img {
   display: block;
   object-fit: cover;
 
+  margin-top: 27px;
   margin-left: auto;
   margin-right: auto;
 } 
@@ -874,7 +905,7 @@ padding-top: 0;
 footer {
   height: auto;
   
-  background: var(--1);
+  background-image: url("../img/imgbg/footerBG.png");
 
   padding: 25px;
 }
@@ -890,7 +921,7 @@ footer {
 .footerLinks a {
   font-family: 'Karla';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 18px;
 
   color: var(--3);
@@ -904,7 +935,7 @@ footer {
   font-family: 'Karla';
   font-style: normal;
   font-weight: 200;
-  font-size: 15px;
+  font-size: 14px;
 
   color: var(--3);
   text-decoration: none;
