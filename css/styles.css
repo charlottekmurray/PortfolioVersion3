@@ -267,16 +267,16 @@ width: 70px;
   background-image: url("../img/imgbg/longrose.png");
   background-size: 360px;
   background-repeat: no-repeat;
-  background-position: 53.5% top; 
+  background-position: 53% -12px; 
 
-height: 520px;
+height: 485px;
 }
 
 #rosebgShort {
   background-image: url("../img/imgbg/longrose.png");
   background-size: 360px;
   background-repeat: no-repeat;
-  background-position: 53.5% top; 
+  background-position: 53% -12px; 
 
   
 height: 280px;
@@ -284,14 +284,42 @@ height: 280px;
 }
 
 #intro {
-  padding-top: 100px;
+  padding-top: 88px;
+}
+
+/* Back to Top Button */
+
+
+#toTop {
+  display: none; 
+  position: fixed; 
+  bottom: 40px; 
+  right: 40px; 
+  line-height: 10px;
+  z-index: 99; 
+  border: none; 
+  border-radius: 50%;
+  background-color: rgba(225, 225, 225, 0.2);
+  cursor: pointer; 
+  padding: 19px 16px 19px 16px; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: background-color 0.2s;
+}
+
+#toTop:hover {
+  background-color: rgba(225, 225, 225, 0.4);
+}
+
+#toTop svg path {
+  stroke: var(--3);
 }
 
 /* For all */
 
 #portfolio {
   padding: 70px;
-  margin-bottom: 110px;
+  padding-top: 85px;
+  margin-bottom: 85px;
 }
 
 /* Portfolio Categories Grid */
@@ -372,10 +400,15 @@ width: 800px;
 
 .projectGrid {
   display: grid;
-  grid-template: repeat(10, 53px) / 360px 360px;
+  grid-template: repeat(8, 53px) / 360px 360px;
   gap: 50px;
 
   justify-content: center;
+}
+
+.projectGrid hr {
+  width: 80px;
+  margin: 18px auto 11px auto;
 }
 
 .projectGrid h2 {
@@ -448,7 +481,7 @@ text-indent:0;
 
 .portfolioImg a:hover img {
   box-shadow: 0px 0px 15px 0px var(--1);
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 a:hover .img__description_layer {

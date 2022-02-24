@@ -1,11 +1,16 @@
+toTop = document.getElementById("toTop");
 
+window.onscroll = function() {scrollUp()};
 
-var elem = document.querySelector(".carousel");
-var flkty = new Flickity(elem, {
-  wrapAround: true,
-  autoPlay: 3000,
-  fade: true,
-  prevNextButtons: false,
-  pageDots: false,
-  setGallerySize: false
-});
+function scrollUp() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    toTop.style.display = "block";
+  } else {
+    toTop.style.display = "none";
+  }
+}
+
+function goToTop() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+} 
