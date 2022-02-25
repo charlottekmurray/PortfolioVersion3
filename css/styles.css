@@ -160,6 +160,20 @@ p {
   color: var(--3);
 }
 
+ul {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+  
+    line-height: 133.4%;
+  
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+    color: var(--3);
+}
+
 /* Line on main page */
 
 hr {
@@ -714,6 +728,10 @@ margin: 10px;
   width: 50%;
 }
 
+.forty {
+  width: 40%;
+}
+
 
 /* Two next to each other */
 .twoNext {
@@ -736,13 +754,23 @@ width: 500px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-/* Just Titles - structure */
-.centerTitle{
+/* Sections that have centered text */
+.centerText{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 0;
 } 
+
+/* centered titles */
+.centerTitle {
+  text-align: center;
+}
+
+/* bottom margin for text sections that are centered */
+.center {
+  margin-bottom: 50px;
+}
 
 /* Styling for text rect */
 .square {
@@ -765,8 +793,8 @@ width: 500px;
   margin-bottom: 80px;
   
    padding: 15px 45px 15px 45px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
 
 /* Align self for flex */
 .alignCenter {
@@ -904,6 +932,7 @@ height: 100%;
 
 /* For Codepen Portal */
 .codepen {
+  margin-top: -10px;
   padding-top: 0;
   width: 60%;
   
@@ -919,7 +948,7 @@ height: 100%;
 
   /* required to see the handle */
   padding: 100px;
-padding-top: 0; 
+padding-top: 50px; 
   /* default height */
    height: 600px;
 }
