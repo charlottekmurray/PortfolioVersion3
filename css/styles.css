@@ -162,6 +162,16 @@ p {
   color: var(--3);
 }
 
+a{
+  color: var(--3);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--1);
+}
+
 ul {
     font-family: 'Karla';
     font-style: normal;
@@ -198,6 +208,7 @@ hr {
 .links a:hover {
   text-decoration: 1px  line-through var(--3);
 }
+
 
 
 
