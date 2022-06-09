@@ -965,9 +965,9 @@ footer {
 /* where hamburger menu comes in */
 @media (min-width: 1050px) {
 
-  /* body {
+  body {
     background: red;
-  } */
+  }
 
   h1 {
     font-size: 60px;
@@ -1077,9 +1077,9 @@ footer {
 
 @media (min-width: 700px) {
 
-  /* body {
+  body {
     background: blue;
-  } */
+  }
 
   nav {
   padding: 25px 90px 20px 40px;
@@ -1264,9 +1264,9 @@ margin-bottom: 50px;
 
 @media only screen and (min-width: 0) {
 
-  /* body{
+  body{
     background: purple;
-  } */
+  }
 
   .links {
     display: none;
