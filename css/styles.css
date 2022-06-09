@@ -1075,7 +1075,7 @@ footer {
 } */
 
 
-/* @media only screen and (min-width: 0em) {
+@media only screen and (min-width: 26em) {
 
   body {
     background: blue;
@@ -1258,7 +1258,7 @@ margin-bottom: 50px;
   width: 40px;
 }
 
-} */
+}
 
 
 @media only screen and (min-width: 0em) {
