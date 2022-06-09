@@ -963,99 +963,119 @@ footer {
 
 
 /* where hamburger menu comes in */
+@media (max-width: 1050px) {
 
-@media only screen and (min-width: 0) {
-
-  /* body{
-    background: purple;
+  /* body {
+    background: red;
   } */
 
-  .links {
-    display: none;
-  }
-
   h1 {
-    font-size: 33px;
-    letter-spacing: 4px;
+    font-size: 60px;
+    letter-spacing: 8px;
   }
 
-  h3{
-    font-size: 20px;
-  }
-
-  header section h1 {
+  h3 {
     font-size: 30px;
-    }
-
-section h3 {
-  font-size: 20px;
-  } 
-
-  header img {
-    width: 90%;
-  }
-
-  #headerinfo {
-    margin: 0 20px 40px 20px;
-    padding: 5px;
-  }
-
-  .fifty {
-    width: 100%;
   }
 
   .portfolioGrid {
-    width: 250px;
+    grid-template: repeat(4, 150px) / repeat(4, 150px);
+    width: 600px;
+    height: 600px;
   }
 
   .portfolioImg a {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
   }
 
   .portfolioImg img {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
   }
 
   .img__description_layer {
-    height: 250px;
-    width: 250px;
-  }
-
-  .footerLinks a{
-    font-size: 14px;
-    margin-left: 0;
-  }
-
-  .subLinks a{
-    font-size: 10px
+    height: 300px;
+    width: 300px;
   }
 
 
-  .marg {
-    margin: 50px 0 50px 0;
+  .projectGrid {
+    grid-template: repeat(7, 49px) / 300px 300px;
+    gap: 35px;
   }
 
-  .square {
-    width: 250px;
+  #headerInfo {
+    margin-bottom: -25px;
   }
 
-  iframe {
-    width: 310px;
+  #headerInfo p{
+    padding: 0 10px 0 10px;
   }
 
-  .piece1 , .piece2{
-    align-self: center;
+  #metadata {
+    flex-wrap: wrap;
+ 
   }
 
-  .piece3 {
-    width: 310px;
+  #projinfo {
+    width: 90%;
+    min-width: unset;
+    gap: 5%;
+  
   }
+  
+
+
+
+  #finalProject {
+    margin-top: 25px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+
+ p{
+    font-size: 16px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 50px;
+    margin: 50px;
+    padding: 0;
+    }
+    
+    #about img{
+      max-width: 400px;
+      width: 70%;
+      align-self: center;
+    }
+
+    #contact h3{
+      font-size: 30px;
+    }
+
+    #contact h4 {
+      font-size: 25px;;
+    }
+
+    #contactLinks {
+      width: 200px;
+      margin: 60px auto 100px auto;
+    }
+
+    #contactLinks svg {
+      width: 50px;
+    }
   
 }
 
-@media only screen and (min-width: 26em) {
+
+@media (max-width: 700px) {
 
   /* body {
     background: blue;
@@ -1241,113 +1261,95 @@ margin-bottom: 50px;
 
 }
 
-@media screen and (min-width: 72em) {
 
-  /* body {
-    background: red;
+@media only screen and (min-width: 0) {
+
+  /* body{
+    background: purple;
   } */
 
-  h1 {
-    font-size: 60px;
-    letter-spacing: 8px;
+  .links {
+    display: none;
   }
 
-  h3 {
+  h1 {
+    font-size: 33px;
+    letter-spacing: 4px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  header section h1 {
     font-size: 30px;
+    }
+
+section h3 {
+  font-size: 20px;
+  } 
+
+  header img {
+    width: 90%;
+  }
+
+  #headerinfo {
+    margin: 0 20px 40px 20px;
+    padding: 5px;
+  }
+
+  .fifty {
+    width: 100%;
   }
 
   .portfolioGrid {
-    grid-template: repeat(4, 150px) / repeat(4, 150px);
-    width: 600px;
-    height: 600px;
+    width: 250px;
   }
 
   .portfolioImg a {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
 
   .portfolioImg img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
 
   .img__description_layer {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .footerLinks a{
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .subLinks a{
+    font-size: 10px
   }
 
 
-  .projectGrid {
-    grid-template: repeat(7, 49px) / 300px 300px;
-    gap: 35px;
+  .marg {
+    margin: 50px 0 50px 0;
   }
 
-  #headerInfo {
-    margin-bottom: -25px;
+  .square {
+    width: 250px;
   }
 
-  #headerInfo p{
-    padding: 0 10px 0 10px;
+  iframe {
+    width: 310px;
   }
 
-  #metadata {
-    flex-wrap: wrap;
- 
+  .piece1 , .piece2{
+    align-self: center;
   }
 
-  #projinfo {
-    width: 90%;
-    min-width: unset;
-    gap: 5%;
-  
+  .piece3 {
+    width: 310px;
   }
-  
-
-
-
-  #finalProject {
-    margin-top: 25px;
-  }
-  h4 {
-    font-size: 25px;
-  }
-
- p{
-    font-size: 16px;
-  }
-
-  #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    gap: 50px;
-    margin: 50px;
-    padding: 0;
-    }
-    
-    #about img{
-      max-width: 400px;
-      width: 70%;
-      align-self: center;
-    }
-
-    #contact h3{
-      font-size: 30px;
-    }
-
-    #contact h4 {
-      font-size: 25px;;
-    }
-
-    #contactLinks {
-      width: 200px;
-      margin: 60px auto 100px auto;
-    }
-
-    #contactLinks svg {
-      width: 50px;
-    }
   
 }
+ 
