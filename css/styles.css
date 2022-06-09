@@ -1075,7 +1075,7 @@ footer {
 } */
 
 
-@media only screen and (max-width: 72em) {
+@media only screen and (max-width: 417px) {
 
   body {
     background: blue;
