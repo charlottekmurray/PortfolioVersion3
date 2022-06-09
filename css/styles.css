@@ -1075,7 +1075,7 @@ footer {
 }
 
 
-@media (max-width: 481px) {
+@media (max-width: 601px) {
 
   body {
     background: blue;
