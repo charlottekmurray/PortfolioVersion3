@@ -213,6 +213,15 @@ hr {
   text-decoration: 1px  line-through var(--3);
 }
 
+.hamNav a {
+display: none;
+}
+
+
+/* Menu Button Icon */
+a.toggle-nav {
+  display: none;
+}
 
 
 
@@ -264,10 +273,7 @@ font-size: 14px;
 
 body {
   background: var(--4);
-  background-image: url("../img/imgbg/longBG.png");
-background-size: 100%;
 
-background-repeat: repeat;
 }
 
 /* Nav */
@@ -350,6 +356,15 @@ height: 280px;
 }
 
 /* For all */
+
+main {
+  background-image: url("../img/imgbg/longBG.png");
+  background-size: 100%;
+  
+  background-repeat: repeat;
+    
+}
+
 
 #portfolio {
   padding-bottom: 70px;
@@ -581,7 +596,7 @@ align-self: flex-start;
   margin-right: auto;
 } 
 
-header img {
+#projHeader {
   height: 400px;
   width: 75%; 
   border-radius: 15px;
@@ -965,8 +980,104 @@ footer {
 /* where hamburger menu comes in */
 @media (max-width: 961px) {
 
-  body {
+  /* body {
     background: red;
+  } */
+
+  main {
+    background-image: url("../img/imgbg/longBG.png");
+    background-size: 100%;
+    
+    background-repeat: repeat;
+  
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      
+      
+      /* x translate matches width of navigation */
+      transform: translate( 0, 0);
+        /* animate with transition */
+      transition: transform .25s;
+      
+  }
+  
+  /* Main Content : Show Menu */
+  main.open {
+    transform: translate( -180px, 0);
+    
+  }
+
+  main.open a.toggle-nav img{
+    transform: translate( 180px, 0);
+  }
+
+
+  .hamNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    width: fit-content;
+    
+    /* position'ing */
+    position: fixed;
+    top: 35px;
+    right: -180px;
+    height: 200px;
+
+    margin: 50px;
+    
+  }
+
+  .hamNav a {
+    display: block;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 17px;
+  
+    color: var(--3);
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+
+  .smallLinks {
+    margin-top: -15px;
+  }
+
+  .smallLinks a{
+    color: var(--3);
+font-size: 14px;
+
+  padding: 5px 3px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  .hamNav a:hover {
+    text-decoration: 1px  line-through var(--3);
+  }
+
+  nav {
+    padding-right: 20px;
+  }
+
+  a.toggle-nav {
+    display: block;
+  }
+  
+  a.toggle-nav {
+    align-self: flex-start;
+    padding-top: .5em;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  /* Menu Button Icon */
+  a.toggle-nav img {
+    align-self: flex-start;
+    /* vertical-align: middle; */
   }
 
   #rosebg {
@@ -992,6 +1103,10 @@ footer {
 
   h3 {
     font-size: 30px;
+  }
+
+  .links {
+    display: none;
   }
 
   .portfolioGrid {
@@ -1093,14 +1208,10 @@ footer {
 
 @media (max-width: 601px) {
 
-  body {
+  /* body {
     background: blue;
-  }
+  } */
 
-  nav {
-  padding: 25px 90px 20px 40px;
-  
-  }
 
   #rosebg {
     background-size: 300px;
@@ -1191,7 +1302,7 @@ footer {
   }
 
 
-  header img {
+  #projHeader  {
     height: 220px;
   } 
 
@@ -1279,9 +1390,9 @@ margin-bottom: 50px;
 
 @media (max-width: 26em) {
 
-  body{
+  /* body{
     background: purple;
-  }
+  } */
 
   .links {
     display: none;
@@ -1304,7 +1415,7 @@ section h3 {
   font-size: 20px;
   } 
 
-  header img {
+  #projHeader {
     width: 90%;
   }
 
