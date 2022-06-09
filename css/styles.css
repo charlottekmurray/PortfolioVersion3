@@ -960,6 +960,11 @@ footer {
   text-decoration: 1px  line-through var(--3);
 }
 
+@media screen and (min-width: 72em)  { 
+  
+
+}
+
 
 
 /* where hamburger menu comes in */
