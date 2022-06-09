@@ -963,7 +963,7 @@ footer {
 
 
 /* where hamburger menu comes in */
-@media (max-width: 1050px) {
+@media (min-width: 1050px) {
 
   /* body {
     background: red;
@@ -1075,7 +1075,7 @@ footer {
 }
 
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
 
   /* body {
     background: blue;
