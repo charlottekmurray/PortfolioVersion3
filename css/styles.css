@@ -969,6 +969,22 @@ footer {
     background: red;
   }
 
+  #rosebg {
+    background-size: 2750px;
+    background-position: 55% 12px; 
+  
+  height: 265px;
+  }
+  
+  #rosebgShort {
+    background-size: 275px;
+    background-position: 55% 12px; 
+  
+    
+  height: 230px;
+  
+  }
+
   h1 {
     font-size: 60px;
     letter-spacing: 8px;
