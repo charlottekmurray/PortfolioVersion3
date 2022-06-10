@@ -1023,7 +1023,7 @@ footer {
     /* position'ing */
     position: fixed;
     top: 35px;
-    right: -180px;
+    right: 0;
     height: 200px;
 
     margin: 50px;
