@@ -940,11 +940,7 @@ padding-top: 50px;
 
 footer {
   height: auto;
-  width: 89%;
-
-  position:absolute;
-   bottom:0;
-
+  
   
   background-image: url("../img/imgbg/footerBG.png");
 
@@ -1448,6 +1444,16 @@ margin-bottom: 50px;
 
 h5 {
   font-size: 23px;
+}
+
+
+footer {
+  height: auto;
+  width: 100%;
+  position:fixed;
+   left:0px;
+   bottom:0px;
+  
 }
 
 
