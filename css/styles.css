@@ -52,9 +52,6 @@
   --8: #404040; /* Dark grey */
 }
 
-html {
-  height: 100vh;
-}
 
 /* Text styles */
 
@@ -282,6 +279,8 @@ body {
   background-size: 100%;
   
   background-repeat: repeat;
+
+  height: 100vh;
 
 }
 
