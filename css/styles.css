@@ -272,6 +272,9 @@ font-size: 14px;
 
 /* Structure */
 
+html,body {
+  height:100%;
+}
 
 body {
   background: var(--4);
