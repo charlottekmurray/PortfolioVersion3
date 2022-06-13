@@ -1092,9 +1092,13 @@ font-size: 14px;
 
   #rosebg {
     background-size: 185px;
-    background-position: 50% 26px; 
+    background-position: 50% 13px; 
   
- height: 370px;
+ height: 357px;
+  }
+
+  #rosebg #intro {
+    padding-top: 103px;
   }
   
   #rosebgShort {
@@ -1243,9 +1247,13 @@ font-size: 14px;
 
   #rosebg {
     background-size: 185px;
-    background-position: 49% 43px; 
+    background-position: 49% 5px; 
   
- height: 269px;
+ height: 231px;
+  }
+
+  #rosebg #intro {
+    padding-top: 80px;
   }
   
   #rosebgShort {
