@@ -580,7 +580,8 @@ align-self: flex-start;
 #contact{
   margin-top: 70px;
   height: 100%;
-  max-height: 500px;
+  max-height: 700px;
+  min-height: 10px;
   /* height:46%; */
 
 }
