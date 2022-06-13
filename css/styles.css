@@ -1099,11 +1099,15 @@ font-size: 14px;
   
   #rosebgShort {
     background-size: 185px;
-    background-position: 49% 30px; 
+    background-position: 49% 15px; 
   
-    height: 210px;
+    height: 195px;
 
   
+  }
+
+  #rosebgShort #intro {
+    padding-top: 68px;
   }
 
 
@@ -1246,11 +1250,15 @@ font-size: 14px;
   
   #rosebgShort {
     background-size: 185px;
-    background-position: 48% 35px; 
+    background-position: 48% 15px; 
   
-    height: 210px;
+    height: 195px;
 
   
+  } 
+
+  #rosebgShort #intro {
+    padding-top: 68px;
   }
 
   h1 {
@@ -1440,6 +1448,7 @@ h5 {
   .links {
     display: none;
   }
+
 
   h1 {
     font-size: 33px;
