@@ -1215,8 +1215,12 @@ font-size: 14px;
     }
 
     .footerLinks{
-      margin-right: 10%;
-      margin-left: 10%;
+      margin-right: 8%;
+      margin-left: 8%;
+    }
+
+    .subLinks a {
+      margin-left: 1px;
     }
   
 }
