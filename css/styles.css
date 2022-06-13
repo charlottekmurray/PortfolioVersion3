@@ -940,6 +940,11 @@ padding-top: 50px;
 
 footer {
   height: auto;
+  width: 89%;
+
+  position:absolute;
+   bottom:0;
+
   
   background-image: url("../img/imgbg/footerBG.png");
 
