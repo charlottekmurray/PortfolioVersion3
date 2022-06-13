@@ -274,7 +274,10 @@ font-size: 14px;
 body {
   background: var(--4);
 
-
+  background-image: url("../img/imgbg/longBG.png");
+  background-size: 100%;
+  
+  background-repeat: repeat;
 
 }
 
@@ -304,21 +307,21 @@ width: 70px;
 
 #rosebg {
   background-image: url("../img/imgbg/longrose.png");
-  background-size: 360px;
+  background-size: 226px;
   background-repeat: no-repeat;
-  background-position: 53% -12px; 
+  background-position: 50% 20px; 
 
-height: 455px;
+height: 450px;
 }
 
 #rosebgShort {
   background-image: url("../img/imgbg/longrose.png");
-  background-size: 360px;
+  background-size: 226px;
   background-repeat: no-repeat;
-  background-position: 55% -12px; 
+  background-position: 49% 20px; 
 
   
-height: 280px;
+height: 235px;
 
 }
 
@@ -943,7 +946,10 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+
   
+  margin-right: 18%;
+  margin-left: 18%;
   margin-bottom: 18px;
 }
 
@@ -982,9 +988,9 @@ footer {
 /* where hamburger menu comes in */
 @media (max-width: 961px) {
 
-  /* body {
-    background: red;
-  } */
+  body {
+    background-image: url("../img/imgbg/footerBG.png");
+  }
 
   main {
   
@@ -1025,7 +1031,7 @@ footer {
     
     /* position'ing */
     position: fixed;
-    top: 35px;
+    top: 45px;
     right: 0;
     height: 200px;
 
@@ -1072,7 +1078,7 @@ font-size: 14px;
   }
   
   a.toggle-nav {
-    align-self: flex-start;
+    align-self: center;
     padding-top: .5em;
     text-decoration: none;
     margin-right: 15px;
@@ -1085,20 +1091,21 @@ font-size: 14px;
   }
 
   #rosebg {
-    background-size: 275px;
-    background-position: 55% 12px; 
+    background-size: 185px;
+    background-position: 50% 26px; 
   
  height: 370px;
   }
   
   #rosebgShort {
-    background-size: 275px;
-    background-position: 55% 12px; 
+    background-size: 185px;
+    background-position: 49% 30px; 
   
-    height: 222px;
+    height: 210px;
 
   
   }
+
 
   h1 {
     font-size: 60px;
@@ -1206,6 +1213,11 @@ font-size: 14px;
     #contactLinks svg {
       width: 50px;
     }
+
+    .footerLinks{
+      margin-right: 10%;
+      margin-left: 10%;
+    }
   
 }
 
@@ -1216,20 +1228,24 @@ font-size: 14px;
     background: blue;
   } */
 
+  nav svg {
+    width: 60px;
+  }
+
 
   #rosebg {
-    background-size: 300px;
-    background-position: 55% 12px; 
+    background-size: 185px;
+    background-position: 49% 43px; 
   
-  height: 265px;
+ height: 269px;
   }
   
   #rosebgShort {
-    background-size: 300px;
-    background-position: 55% 12px; 
+    background-size: 185px;
+    background-position: 48% 35px; 
   
-    
-  height: 230px;
+    height: 210px;
+
   
   }
 
@@ -1388,6 +1404,19 @@ margin-bottom: 50px;
 #contactLinks svg {
   width: 40px;
 }
+
+.footerLinks a{
+  font-size: 15px;
+}
+
+.subLinks a{
+  font-size: 11px;
+}
+
+h5 {
+  font-size: 23px;
+}
+
 
 }
 
