@@ -1215,8 +1215,8 @@ font-size: 14px;
     }
 
     .footerLinks{
-      margin-right: 8%;
-      margin-left: 8%;
+      margin-right: 10%;
+      margin-left: 10%;
     }
 
     .subLinks a {
@@ -1419,6 +1419,12 @@ margin-bottom: 50px;
 
 h5 {
   font-size: 23px;
+}
+
+
+.footerLinks{
+  margin-right: 4%;
+  margin-left: 4%;
 }
 
 
