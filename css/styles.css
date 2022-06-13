@@ -579,7 +579,8 @@ align-self: flex-start;
 
 #contact{
   margin-top: 70px;
-  height:46%;
+  height: 100%;
+  /* height:46%; */
 
 }
 
