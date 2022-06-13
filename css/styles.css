@@ -272,9 +272,6 @@ font-size: 14px;
 
 /* Structure */
 
-html,body {
-  height:100%;
-}
 
 body {
   background: var(--4);
@@ -374,7 +371,6 @@ main {
   background-size: 100%;
   
   background-repeat: repeat; */
-  height:100%;
 }
 
 
@@ -1234,6 +1230,9 @@ font-size: 14px;
       width: 50px;
     }
 
+    #contact {
+      height: auto;
+    }
     .footerLinks{
       margin-right: 10%;
       margin-left: 10%;
