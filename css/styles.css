@@ -272,6 +272,10 @@ font-size: 14px;
 
 /* Structure */
 
+html,body {
+  height:100%;
+}
+
 body {
   background: var(--4);
 
@@ -370,7 +374,7 @@ main {
   background-size: 100%;
   
   background-repeat: repeat; */
-    
+  height:100%;
 }
 
 
@@ -575,6 +579,8 @@ align-self: flex-start;
 
 #contact{
   margin-top: 70px;
+  height:46%;
+
 }
 
 #contactLinks {
@@ -939,6 +945,8 @@ padding-top: 50px;
 
 footer {
   height: auto;
+
+
   
   background-image: url("../img/imgbg/footerBG.png");
 
