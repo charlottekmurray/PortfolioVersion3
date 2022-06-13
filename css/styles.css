@@ -52,6 +52,10 @@
   --8: #404040; /* Dark grey */
 }
 
+html {
+  height: 100vh;
+}
+
 /* Text styles */
 
 h1 {
