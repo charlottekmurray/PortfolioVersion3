@@ -371,7 +371,6 @@ main {
   
   background-repeat: repeat; */
     
-  height: 100%;
 }
 
 
@@ -941,7 +940,6 @@ padding-top: 50px;
 footer {
   height: auto;
   
-  
   background-image: url("../img/imgbg/footerBG.png");
 
   padding: 25px;
@@ -1444,16 +1442,6 @@ margin-bottom: 50px;
 
 h5 {
   font-size: 23px;
-}
-
-
-footer {
-  height: auto;
-  width: 100%;
-  position:fixed;
-   left:0px;
-   bottom:0px;
-  
 }
 
 
