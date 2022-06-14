@@ -907,6 +907,7 @@ max-width: 400px;
 .picGrid {
   width: 50%;
   /* gap: 5%; */
+  align-self: center;
 }
 
 .ex {
@@ -1221,11 +1222,118 @@ font-size: 14px;
  
   }
 
+  #projHeader  {
+    height: 260px;
+  } 
+
   #projinfo {
     width: 90%;
     min-width: unset;
     gap: 5%;
   
+  }
+
+  .twoNext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 50px;
+  }
+  
+  .twoNext h4
+  {
+    text-align: center;
+  }
+  
+  .twoNext img{
+    order: 2;
+  }
+
+  .square {
+    width: 100%;
+  }
+
+  .fullSize {
+    width: 100%;
+  }
+
+  .threePiece {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+.threePiece h4 {
+text-align: center;
+}
+
+  .piece1 {
+    align-self: center;
+  }
+  
+  .piece2 {
+    order: 3;
+    align-self: center;
+  }
+
+  
+
+  
+  .piece3 {
+    height: 800px;
+    align-self: center;
+  }
+
+  .picGrid{
+    width: 450px;
+    margin: auto;
+  }
+  .ex {
+    width: 40%;
+  }
+
+  .marg {
+    margin: 70px;
+  }
+
+  .flexThree{
+    gap: 25px;
+  }
+
+  iframe .hundred{
+    height: 10px;
+  }
+
+  .artDirection {
+    align-items: center;
+  }
+
+  .threeGrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .threeGrid1 {
+    align-self: center;
+  }
+
+  .threeGrid1 h4{
+    text-align: center;
+  }
+
+  #threegrid3 {
+    align-self: center;
+  }
+
+  .fifty {
+    width: 100%;
+  }
+
+  .cp_embed_wrapper{
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0; 
   }
   
 
@@ -1375,9 +1483,7 @@ font-size: 14px;
 
 
 
-  #projHeader  {
-    height: 220px;
-  } 
+
 
   header section h1 {
     font-size: 40px;
@@ -1401,46 +1507,11 @@ section h3 {
   width: 85%;
 }
 
-.twoNext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  gap: 50px;
-}
-
-.twoNext h4
-{
-  text-align: center;
-}
-
-.twoNext img{
-  order: 2;
-}
 .marg {
   margin: 50px;
 }
 
-.threePiece {
-  display: flex;
-  flex-direction: column;
-}
 
-.piece2 {
-  order: 3;
-}
-
-/* iframe {
-  width: 400px;
-} */
-
-.piece3 {
-  height: 800px;
-}
-
-.square {
-  width: 370px;
-}
 
 .finalMockup {
 margin-bottom: 50px;
@@ -1558,10 +1629,6 @@ section h3 {
 
   .marg {
     margin: 50px 0 50px 0;
-  }
-
-  .square {
-    width: 250px;
   }
 
   /* iframe {
