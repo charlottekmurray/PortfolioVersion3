@@ -35,3 +35,20 @@ menuButton.addEventListener('click', function () {
   } 
   
 });
+
+window.onload=function()
+
+{
+
+setTimeout(func1, 2000);
+
+};
+
+function func1()
+
+{
+
+document.getElementById("DC").style.display = "block";
+
+}
+

@@ -660,9 +660,14 @@ margin: 10px;
   
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   margin: 0 60px 40px 60px;
   padding: 15px;
+}
+
+#metadata p{
+  padding: 0 10px 0 10px;
 }
 
 
@@ -933,9 +938,9 @@ padding-top: 50px;
    height: 600px;
 }
 
-.cp_embed_wrapper iframe {
+/* .cp_embed_wrapper iframe {
   height: 100%;
-}
+} */
 
 /* Anything for 100% */
 .hundred {
@@ -995,7 +1000,23 @@ footer {
   text-decoration: 1px  line-through var(--3);
 }
 
-
+@media (max-width: 1050px){
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 50px;
+    margin: 50px;
+    padding: 0;
+    }
+    
+    #about img{
+      max-width: 400px;
+      width: 70%;
+      align-self: center;
+    }
+}
 
 /* where hamburger menu comes in */
 @media (max-width: 961px) {
@@ -1202,21 +1223,7 @@ font-size: 14px;
     font-size: 16px;
   }
 
-  #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    gap: 50px;
-    margin: 50px;
-    padding: 0;
-    }
-    
-    #about img{
-      max-width: 400px;
-      width: 70%;
-      align-self: center;
-    }
+
 
     #contact h3{
       font-size: 30px;
@@ -1417,9 +1424,9 @@ section h3 {
   order: 3;
 }
 
-iframe {
+/* iframe {
   width: 400px;
-}
+} */
 
 .piece3 {
   height: 800px;
@@ -1551,9 +1558,9 @@ section h3 {
     width: 250px;
   }
 
-  iframe {
+  /* iframe {
     width: 310px;
-  }
+  } */
 
   .piece1 , .piece2{
     align-self: center;
