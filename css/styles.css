@@ -1562,6 +1562,11 @@ h5 {
     background: purple;
   } */
 
+  nav svg {
+    display:none;
+    width: 60px;
+  }
+
   .links {
     display: none;
   }
