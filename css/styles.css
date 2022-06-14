@@ -374,6 +374,7 @@ main {
   background-size: 100%;
   
   background-repeat: repeat; */
+  height: 100%;
 }
 
 
@@ -1012,6 +1013,7 @@ footer {
       position: relative;
       z-index: 1;
       min-height: 100vh;
+      height: auto;
       
       
       /* x translate matches width of navigation */
