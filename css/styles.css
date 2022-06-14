@@ -1617,6 +1617,11 @@ section h3 {
     width: 250px;
   }
 
+  section img {
+    max-width: 500px;
+    min-width: 245px;
+  }
+
   .footerLinks a{
     font-size: 14px;
     margin-left: 0;
@@ -1628,12 +1633,12 @@ section h3 {
 
 
   .marg {
-    margin: 50px 0 50px 0;
+    margin: 25px;
   }
 
-  /* iframe {
+  iframe {
     width: 310px;
-  } */
+  }
 
   .piece1 , .piece2{
     align-self: center;
