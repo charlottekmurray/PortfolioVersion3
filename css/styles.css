@@ -1443,6 +1443,10 @@ text-align: center;
   #contact h4 {
     font-size: 20px;;
   }
+
+  #headerinfo{
+    margin: 25px;
+  }
   
   .portfolioGrid {
     display: flex;
@@ -1558,10 +1562,6 @@ h5 {
 
 @media (max-width: 26em) {
 
-  body{
-    background-image: none;
-    background: purple;
-  }
 
 
   nav svg {
@@ -1639,7 +1639,7 @@ section h3 {
 
 
   .marg {
-    margin: 25px;
+    margin: 50px;
   }
 
   iframe {
