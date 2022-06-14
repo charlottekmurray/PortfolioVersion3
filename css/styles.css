@@ -1593,6 +1593,7 @@ section h3 {
   #projHeader {
     width: 90%;
     height: 173px;
+    margin-top: 0px;
   }
 
   #headerinfo {
