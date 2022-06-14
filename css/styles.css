@@ -1484,7 +1484,14 @@ text-align: center;
   }
 
 
+.flexThree {
+  flex-direction: column;
+  align-items: center;
+}
 
+.flexThree img{
+  width: 80%;
+}
 
 
 
