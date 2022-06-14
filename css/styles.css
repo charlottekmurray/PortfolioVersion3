@@ -1558,9 +1558,11 @@ h5 {
 
 @media (max-width: 26em) {
 
-  /* body{
+  body{
+    background-image: none;
     background: purple;
-  } */
+  }
+
 
   nav svg {
     display:none;
