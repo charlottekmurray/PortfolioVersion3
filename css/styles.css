@@ -1565,7 +1565,6 @@ h5 {
 
 
   nav svg {
-    display:none;
     width: 60px;
   }
 
@@ -1593,11 +1592,12 @@ section h3 {
 
   #projHeader {
     width: 90%;
+    height: 173px;
   }
 
   #headerinfo {
     margin: 0 20px 40px 20px;
-    padding: 5px;
+    padding: 20px 5px 20px 5px;
   }
 
   .fifty {
@@ -1624,7 +1624,7 @@ section h3 {
   }
 
   section img {
-    max-width: 500px;
+    max-width: 310px;
     min-width: 245px;
   }
 
@@ -1637,9 +1637,22 @@ section h3 {
     font-size: 10px
   }
 
+  .cp_embed_wrapper {
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
 
   .marg {
     margin: 50px;
+  }
+
+  .picGrid {
+    width: 312px;
+  }
+
+  .flexThree {
+    gap: 10px;
   }
 
   iframe {
