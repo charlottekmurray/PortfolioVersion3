@@ -40,14 +40,11 @@
 }
 
 :root {
-  --1: #7E2F38; /*dark red*/
-  --2: #FFBAC2; /*light pink*/
+  --1: #B08787; /*dark red changed to dusty mauve*/
+  --2: #FCFBF7; /*light pink changed to whiteish*/
   --3: #FCFBF7; /*whiteish*/
-  --4: #B15433; /*orange*/
-  --5: #BA4250; /*Megenta*/
-
-  --6: #588175; /*medium green*/
-  --7: #AECAC0; /*light green*/
+  --4: #C59E99; /*orange - changed to mauve*/ 
+  --5: #AD7474; /*Megenta*/
   
   --8: #404040; /* Dark grey */
 }
@@ -279,10 +276,10 @@ html,body {
 body {
   background: var(--4);
 
-  background-image: url("../img/imgbg/longBG.png");
+  /* background-image: url("../img/imgbg/longBG.png");
   background-size: 100%;
   
-  background-repeat: repeat;
+  background-repeat: repeat; */
 
   height: 100%;
 
@@ -693,7 +690,7 @@ margin: 0 60px 40px 60px;
   justify-content: space-around;
   gap: 70px;
 
-  margin: 0px auto 0 auto;
+  margin: 0px auto 25px auto;
   width: 92%;
 }
 
@@ -969,8 +966,8 @@ footer {
   height: auto;
 
 
-  
-  background-image: url("../img/imgbg/footerBG.png");
+  background: var(--5);
+  /* background-image: url("../img/imgbg/footerBG.png"); */
 
   padding: 25px;
 }
@@ -1507,6 +1504,7 @@ section h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 #projinfo h4{
