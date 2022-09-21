@@ -1034,14 +1034,14 @@ footer {
 /* where hamburger menu comes in */
 @media (max-width: 961px) {
 
-/* 
+
   body {
     background-image: url("../img/imgbg/footerBG.png");
-  } */
+  }
 
   main {
   
-    background-image: url("img/imgbg/mauvecolor.png");
+    background-image: url("../img/imgbg/mauvecolor.png");
     background-size: 100%;
     
     background-repeat: repeat;
